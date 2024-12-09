@@ -21,6 +21,35 @@
         <a href="login"><i class="fa fa-sign-out"></i> Abmelden</a>
     </header>
     <main>
+        <div class="container">
+            <h1>Zinsrechner</h1>
+            <form id="zinsForm">
+                <label for="Kredit">Kredit (in €):</label>
+                <select id="kapital">
+                    <option value="1000">1.000</option>
+                    <option value="5000">5.000</option>
+                    <option value="10000">10.000</option>
+                </select>
+    
+                <label for="zinssatz">Zinssatz (in %):</label>
+                <select id="zinssatz">
+                    <option value="1">1%</option>
+                    <option value="2">2%</option>
+                    <option value="5">5%</option>
+                </select>
+    
+                <label for="jahre">Laufzeit (in Jahren):</label>
+                <select id="jahre">
+                    <option value="1">1 Jahr</option>
+                    <option value="5">5 Jahre</option>
+                    <option value="10">10 Jahre</option>
+                </select>
+    
+                <button type="button" onclick="zinsBerechnen()">Berechnen</button>
+            </form>
+            <p id="ergebnis"></p>
+        </div>
+    
         <H1>Kredit beantragen</H1>
     </main>
 
